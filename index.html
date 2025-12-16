@@ -6,201 +6,316 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5c5c88297c.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="imgs/icon.png" type="image/x-icon">
-    <title>Portf&oacute;lio</title>
+    <title>Portf&oacute;lio - Jo&atilde;o Porto</title>
 </head>
 <body>
-
-     <header id="header2">
-        <a href="index.html"><img src="imgs/logo.png" alt="Logo Joao Porto" class="logo"></a>
-        <div class="container">
-            <div class="flex">  
-                <nav>
+    <div class="bg-grid"></div>
+    <header id="header2" class="topbar">
+        <div class="container flex between">
+            <a href="#header" class="brand">
+                <div class="brand-mark">JP</div>
+                <span class="brand-text">Jo&atilde;o Porto</span>
+            </a>
+            <nav>
                 <ul id="sidemenu">
-                    <li> <a href="#header">Home</a></li>
-                    <li> <a href="#about">About</a></li>
-                    <li> <a href="#services">Services</a></li>
-                    <li> <a href="#portifolio">Portifolio</a></li>
-                    <li> <a href="#contact">Contact</a></li>
+                    <li><a href="#header">In&iacute;cio</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Servi&ccedil;os</a></li>
+                    <li><a href="#portifolio">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
                     <i class="fa-solid fa-x" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-               </nav>
-            </div> <!-- flex -->
-        </div> <!--header2 -->
+            </nav>
+        </div>
     </header>
-    <div id="header">
-        <div id="headerText">
-            <p>Data Analyst</p>
-            <h1> Hi! I'm <span>Jo&atilde;o Porto</span><br>From Angra/RJ </h1>
-        </div>
-    </div>
-    <!-----------------ABOUT------------->
-    <div id="about">
-     <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="imgs/user.jpg" alt="Foto de Joao Porto">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, esse! Distinctio magnam, molestias ipsum, aliquid molestiae nam atque reprehenderit sunt architecto quas mollitia culpa eum. Consequatur perspiciatis odio tempora fugiat?</p>
 
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills', this)">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience', this)">Experience</p>
-                    <p class="tab-links" onclick="opentab('education', this)" >Education</p>
+    <section id="header" class="hero">
+        <div class="floating-shapes">
+            <span></span><span></span><span></span>
+        </div>
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <p class="eyebrow">Portf&oacute;lio • Dados • Produto</p>
+                <h1>Crio experi&ecirc;ncias com <span>dados + c&oacute;digo</span>.</h1>
+                <p class="lede">Dashboards, automa&ccedil;&otilde;es, produtos web e chatbots com BI, Python, SQL e IA. Foco em clareza, entrega r&aacute;pida e hist&oacute;rias que convencem.</p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#portifolio">Ver projetos</a>
+                    <a class="btn ghost" href="#contact">Falar comigo</a>
                 </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>2024</span><br>skills</li>
-                        <li><span>2024 - 2024</span><br>skills</li>
-                        <li><span>2024 - 2024</span><br>skills</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>2024</span><br>EXPERIENCIA</li>
-                        <li><span>2024</span><br>EXPERIENCIA</li>
-                        <li><span>2024</span><br>EXPERIENCIA</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2024</span><br>EDUCATION</li>
-                        <li><span>2024</span><br>EDUCATION</li>
-                        <li><span>2024</span><br>EDUCATION</li>
-                    </ul>
+                <div class="hero-interactive">
+                    <div class="hero-stats">
+                        <div><strong>20+</strong><span>Dashboards entregues</span></div>
+                        <div><strong>Full stack</strong><span>Python • JS • SQL</span></div>
+                        <div><strong>IA/Chatbot</strong><span>Fluxos e integra&ccedil;&otilde;es</span></div>
+                    </div>
+                    <div class="skill-deck">
+                        <p class="eyebrow">Compet&ecirc;ncias</p>
+                        <div class="skill-pills" id="skillPills">
+                            <button class="skill-pill active" data-skill="office">Pacote Office</button>
+                            <button class="skill-pill" data-skill="analytics">An&aacute;lise de Dados</button>
+                            <button class="skill-pill" data-skill="powerbi">Power BI</button>
+                            <button class="skill-pill" data-skill="python">Python</button>
+                            <button class="skill-pill" data-skill="sql">SQL / NewSQL / Big Data</button>
+                            <button class="skill-pill" data-skill="fullstack">Programador Full Stack</button>
+                            <button class="skill-pill" data-skill="ai">Chatbot e IA</button>
+                            <button class="skill-pill" data-skill="automation">Automa&ccedil;&otilde;es</button>
+                        </div>
+                        <div class="skill-card" id="skillCard">
+                            <h4 id="skillTitle">Pacote Office</h4>
+                            <p id="skillDesc">Dashboards e relat&oacute;rios r&aacute;pidos em Excel/PowerPoint com automa&ccedil;&atilde;o e storytelling para decis&otilde;es executivas.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="hero-visual">
+                <div class="avatar-xl">JP</div>
+                <div class="badge">
+                    <i class="fa-solid fa-sparkles"></i>
+                    <span>Dispon&iacute;vel p/ projetos</span>
+                </div>
+            </div>
         </div>
-     </div>
-</div>
+    </section>
 
-    <!-----------------SERVICE------------->
-    <div id="services">
+    <section id="about" class="section">
+        <div class="container split">
+            <div class="card about-card">
+                <div class="avatar-sm">JP</div>
+                <div>
+                    <p class="eyebrow">Sobre</p>
+                    <h2>Mais que relat&oacute;rios, hist&oacute;rias que movem times.</h2>
+                </div>
+                <p class="body">
+                    Traduzo perguntas em m&eacute;tricas, modelos e visualiza&ccedil;&otilde;es. Gosto de sujar as m&atilde;os em bases cruas, limpar, modelar e entregar narrativas claras com BI ou notebooks interativos.
+                </p>
+                <div class="chips">
+                    <span>Python</span><span>SQL</span><span>Power BI</span><span>ETL</span><span>Data Viz</span><span>Automatiza&ccedil;&atilde;o</span>
+                </div>
+                <div class="timeline">
+                    <div>
+                        <p class="time">2024</p>
+                        <h4>Freelance • Projetos de BI</h4>
+                        <p>Dashboards executivos e automa&ccedil;&otilde;es de relat&oacute;rios.</p>
+                    </div>
+                    <div>
+                        <p class="time">2023</p>
+                        <h4>Analytics • Estudos e cases</h4>
+                        <p>Modelagem de dados, prot&oacute;tipos e storytelling.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card highlight">
+                <p class="eyebrow">Stack em uso</p>
+                <ul class="stack-list">
+                    <li><i class="fa-solid fa-database"></i> Modelagem e SQL</li>
+                    <li><i class="fa-solid fa-chart-line"></i> Power BI e dataviz</li>
+                    <li><i class="fa-solid fa-gears"></i> ETL/ELT em Python</li>
+                    <li><i class="fa-solid fa-wand-magic-sparkles"></i> Automa&ccedil;&atilde;o e alertas</li>
+                </ul>
+                <div class="note">Curto ciclos curtos, prot&oacute;tipos r&aacute;pidos e feedback constante.</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
+            <div class="section-header">
+                <p class="eyebrow">Servi&ccedil;os</p>
+                <h2>Do dado bruto &agrave; decis&atilde;o.</h2>
+            </div>
             <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Servi&ccedil;o 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, possimus soluta libero minima sunt modi hic veritatis accusantium cum nostrum suscipit molestias quo minus? Et voluptates animi nam sint beatae.</p>
-                    <a href="#">Learn more</a>
+                <div class="card">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h3>Dashboards e BI</h3>
+                    <p>Estrutura, m&eacute;tricas e visuais que a lideran&ccedil;a realmente usa.</p>
+                    <button class="btn ghost small">Agendar conversa</button>
                 </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>Servi&ccedil;o 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, possimus soluta libero minima sunt modi hic veritatis accusantium cum nostrum suscipit molestias quo minus? Et voluptates animi nam sint beatae.</p>
-                    <a href="#">Learn more</a>
+                <div class="card">
+                    <i class="fa-solid fa-gears"></i>
+                    <h3>Automa&ccedil;&atilde;o de relat&oacute;rios</h3>
+                    <p>ETL em Python, e-mails autom&aacute;ticos e KPIs di&aacute;rios.</p>
+                    <button class="btn ghost small">Quero automatizar</button>
                 </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>Servi&ccedil;o 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, possimus soluta libero minima sunt modi hic veritatis accusantium cum nostrum suscipit molestias quo minus? Et voluptates animi nam sint beatae.</p>
-                    <a href="#">Learn more</a>
+                <div class="card">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h3>An&aacute;lise explorat&oacute;ria</h3>
+                    <p>Explora&ccedil;&otilde;es, cohort, LTV e recomenda&ccedil;&otilde;es acion&aacute;veis.</p>
+                    <button class="btn ghost small">Discutir um case</button>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- -----------------------portfolio--------------------- -->
-
-    <div id="portifolio">
+    <section id="portifolio" class="section">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
+            <div class="section-header">
+                <p class="eyebrow">Projetos</p>
+                <h2>Alguns trabalhos recentes.</h2>
+            </div>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="bi">BI</button>
+                <button class="filter-btn" data-filter="etl">ETL</button>
+                <button class="filter-btn" data-filter="viz">Viz</button>
+            </div>
             <div class="work-list">
-                <div class="work">
-                    <img src="imgs/work-1.avif" alt="Trabalho 1">
-                    <div class="layer">
-                        <h3>EXEMPLE</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto tempore ex vero deserunt ut reici?</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <article class="project-card card" data-type="bi viz">
+                    <div class="project-thumb purple"></div>
+                    <div class="work-body">
+                        <h3>Dashboard de Vendas</h3>
+                        <p>Receita, CAC e churn em tempo real para time executivo.</p>
+                        <div class="tags"><span>Power BI</span><span>SQL</span></div>
+                        <a href="#" class="work-link">Ver case <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="imgs/work-2.avif" alt="Trabalho 2">
-                    <div class="layer">
-                        <h3>EXEMPLE</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto tempore ex vero deserunt ut reici?</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </article>
+                <article class="project-card card" data-type="etl">
+                    <div class="project-thumb green"></div>
+                    <div class="work-body">
+                        <h3>Pipeline de KPIs</h3>
+                        <p>ETL em Python com entrega di&aacute;ria e alertas de qualidade.</p>
+                        <div class="tags"><span>Python</span><span>ETL</span></div>
+                        <a href="#" class="work-link">Ver pipeline <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="imgs/work-3.avif" alt="Trabalho 3">
-                    <div class="layer">
-                        <h3>EXEMPLE</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto tempore ex vero deserunt ut reici?</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </article>
+                <article class="project-card card" data-type="viz">
+                    <div class="project-thumb dark"></div>
+                    <div class="work-body">
+                        <h3>An&aacute;lise de Cohort</h3>
+                        <p>Notebook interativo com LTV e segmenta&ccedil;&atilde;o de reten&ccedil;&atilde;o.</p>
+                        <div class="tags"><span>Python</span><span>Pandas</span></div>
+                        <a href="#" class="work-link">Abrir notebook <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
-                </div>
+                </article>
+                <article class="project-card card" data-type="bi etl">
+                    <div class="project-thumb mint"></div>
+                    <div class="work-body">
+                        <h3>Template BI</h3>
+                        <p>Modelo reutiliz&aacute;vel para opera&ccedil;&otilde;es com KPIs chave.</p>
+                        <div class="tags"><span>Power BI</span><span>Design</span></div>
+                        <a href="#" class="work-link">Baixar demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
             </div>
-            <a href="#" class="btn">See more</a>
         </div>
-    </div>
+    </section>
 
-    <!-- ----------------------contact--------------------- -->
-
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> jgrporto26@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i> 24999157259</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/profile.php?id=100008910571819"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://x.com/jgrporto26"><i class="fa-brands fa-square-x-twitter"></i></a>
-                        <a href="https://www.instagram.com/jgrporto26/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/joao-gabriel-rodrigues-porto-242a752ba/"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a target="_blank" href="imgs/Curriculo JG.pdf" download class="btn btn2">Download CV</a>
+    <section id="contact" class="section">
+        <div class="container split contact-grid">
+            <div class="contact-left card">
+                <div class="section-header">
+                    <p class="eyebrow">Contato</p>
+                    <h2>Vamos tirar seu pr&oacute;ximo dashboard do papel.</h2>
                 </div>
-                <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
+                <p><i class="fa-solid fa-paper-plane"></i> jgrporto26@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 24 99915-7259</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100008910571819"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/jgrporto26"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/jgrporto26/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/joao-gabriel-rodrigues-porto-242a752ba/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
+                <a target="_blank" href="imgs/Curriculo JG.pdf" download class="btn primary">Download CV</a>
+            </div>
+            <div class="contact-right card">
+                <form>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="Name" placeholder="Seu nome" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Seu email" required>
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="Message" rows="6" placeholder="Fale sobre o projeto"></textarea>
+                    <button type="submit" class="btn primary full">Enviar mensagem</button>
+                </form>
             </div>
         </div>
         <div class="copyright">
             <p>Copyright &copy; Jo&atilde;o Porto</p>
         </div>
-    </div>
+    </section>
 
 <script>
-    const tablinks = document.getElementsByClassName("tab-links");
-    const tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname, el) {
-        for (const tablink of tablinks) {
-            tablink.classList.remove("active-link");
-        }
-        for (const tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-        }
-        el.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
     window.addEventListener("scroll", function() {
         let header = document.querySelector('#header2');
         header.classList.toggle('rolagem',window.scrollY > 0);
     });
 
     const sidemenu = document.getElementById("sidemenu");
-    const headerText = document.getElementById("headerText");
 
     function openmenu(){
         sidemenu.style.right = "0";
-        headerText.style.opacity = "0";
     }
     function closemenu(){
-        sidemenu.style.right = "-200px";
-        headerText.style.opacity = "1";
+        sidemenu.style.right = "-220px";
     }
+
+    // Filtro de projetos
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const type = btn.dataset.filter;
+            projectCards.forEach(card => {
+                if (type === 'all' || card.dataset.type.includes(type)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
+
+    // Deck interativo de competências
+    const skills = {
+        office: {
+            title: "Pacote Office",
+            desc: "Dashboards e relatórios rápidos em Excel/PowerPoint com automação, macros e storytelling para executivos."
+        },
+        analytics: {
+            title: "Análise de Dados",
+            desc: "Coleta, limpeza, modelagem e insights acionáveis com foco em métricas de negócio e produto."
+        },
+        powerbi: {
+            title: "Power BI",
+            desc: "Modelagem, DAX e visuais claros; governança, performance e publicação segura."
+        },
+        python: {
+            title: "Python",
+            desc: "ETL/ELT, automações, APIs, notebooks exploratórios e integrações com serviços cloud."
+        },
+        sql: {
+            title: "SQL / NewSQL / Big Data",
+            desc: "Consultas otimizadas, modelagem relacional e uso de motores distribuídos para alto volume."
+        },
+        fullstack: {
+            title: "Programador Full Stack",
+            desc: "Apps web com foco em dados, front em JS e back com APIs limpas."
+        },
+        ai: {
+            title: "Chatbot e IA",
+            desc: "Fluxos conversacionais, integrações de APIs de linguagem e automações com contexto."
+        },
+        automation: {
+            title: "Automações",
+            desc: "Jobs agendados, orquestração e envio de KPIs, alertas e relatórios sem esforço manual."
+        }
+    };
+
+    const pillContainer = document.getElementById("skillPills");
+    const skillTitle = document.getElementById("skillTitle");
+    const skillDesc = document.getElementById("skillDesc");
+
+    pillContainer.addEventListener("click", (e) => {
+        if (e.target.classList.contains("skill-pill")) {
+            document.querySelectorAll(".skill-pill").forEach(p => p.classList.remove("active"));
+            e.target.classList.add("active");
+            const key = e.target.dataset.skill;
+            skillTitle.textContent = skills[key].title;
+            skillDesc.textContent = skills[key].desc;
+        }
+    });
 </script>
     
 </body>
