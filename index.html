@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5c5c88297c.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="imgs/icon.png" type="image/x-icon">
-    <title>Portifolio</title>
+    <title>Portf&oacute;lio</title>
 </head>
 <body>
 
      <header id="header2">
-        <a href="index.html"><img src="imgs/logo.png" alt="" class="logo"></a>
+        <a href="index.html"><img src="imgs/logo.png" alt="Logo Joao Porto" class="logo"></a>
         <div class="container">
             <div class="flex">  
                 <nav>
@@ -23,7 +23,7 @@
                     <li> <a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-x" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i></i>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                </nav>
             </div> <!-- flex -->
         </div> <!--header2 -->
@@ -31,7 +31,7 @@
     <div id="header">
         <div id="headerText">
             <p>Data Analyst</p>
-            <h1> Hi! I'm<span> João Porto</span><br>From Angra/RJ <h1>
+            <h1> Hi! I'm <span>Jo&atilde;o Porto</span><br>From Angra/RJ </h1>
         </div>
     </div>
     <!-----------------ABOUT------------->
@@ -39,16 +39,16 @@
      <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="imgs/user.jpg" alt="">
+                <img src="imgs/user.jpg" alt="Foto de Joao Porto">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, esse! Distinctio magnam, molestias ipsum, aliquid molestiae nam atque reprehenderit sunt architecto quas mollitia culpa eum. Consequatur perspiciatis odio tempora fugiat?</p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links"onclick="opentab('education')" >Education</p>
+                    <p class="tab-links active-link" onclick="opentab('skills', this)">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience', this)">Experience</p>
+                    <p class="tab-links" onclick="opentab('education', this)" >Education</p>
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
@@ -83,19 +83,19 @@
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
-                    <h2>Serviço 1</h2>
+                    <h2>Servi&ccedil;o 1</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, possimus soluta libero minima sunt modi hic veritatis accusantium cum nostrum suscipit molestias quo minus? Et voluptates animi nam sint beatae.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop"></i>
-                    <h2>Serviço 2</h2>
+                    <h2>Servi&ccedil;o 2</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, possimus soluta libero minima sunt modi hic veritatis accusantium cum nostrum suscipit molestias quo minus? Et voluptates animi nam sint beatae.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-app-store"></i>
-                    <h2>Serviço 3</h2>
+                    <h2>Servi&ccedil;o 3</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, possimus soluta libero minima sunt modi hic veritatis accusantium cum nostrum suscipit molestias quo minus? Et voluptates animi nam sint beatae.</p>
                     <a href="#">Learn more</a>
                 </div>
@@ -110,7 +110,7 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="imgs/work-1.avif" alt="">
+                    <img src="imgs/work-1.avif" alt="Trabalho 1">
                     <div class="layer">
                         <h3>EXEMPLE</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto tempore ex vero deserunt ut reici?</p>
@@ -118,7 +118,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="imgs/work-2.avif" alt="">
+                    <img src="imgs/work-2.avif" alt="Trabalho 2">
                     <div class="layer">
                         <h3>EXEMPLE</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto tempore ex vero deserunt ut reici?</p>
@@ -126,7 +126,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="imgs/work-3.avif" alt="">
+                    <img src="imgs/work-3.avif" alt="Trabalho 3">
                     <div class="layer">
                         <h3>EXEMPLE</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto tempore ex vero deserunt ut reici?</p>
@@ -144,14 +144,14 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contatc Me</h1>
+                    <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i> jgrporto26@gmail.com</p>
                     <p><i class="fa-solid fa-square-phone"></i> 24999157259</p>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/profile.php?id=100008910571819"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://x.com/jgrporto26"><i class="fa-brands fa-square-x-twitter"></i></a>
                         <a href="https://www.instagram.com/jgrporto26/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/joão-gabriel-rodrigues-porto-242a752ba/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/joao-gabriel-rodrigues-porto-242a752ba/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
                     <a target="_blank" href="imgs/Curriculo JG.pdf" download class="btn btn2">Download CV</a>
                 </div>
@@ -166,34 +166,32 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright © João Porto</p>
+            <p>Copyright &copy; Jo&atilde;o Porto</p>
         </div>
     </div>
 
-<Script>
-        var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+<script>
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
 
-    function opentab(tabname) {
-        for(tablink of tablinks) {
+    function opentab(tabname, el) {
+        for (const tablink of tablinks) {
             tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents) {
+        for (const tabcontent of tabcontents) {
             tabcontent.classList.remove("active-tab");
         }
-        event.currentTarget.classList.add("active-link");
+        el.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
 
     window.addEventListener("scroll", function() {
-        let header = document.querySelector('#header2')
-        header.classList.toggle('rolagem',window.scrollY > 0)
-    })
-</Script>
-<script>
+        let header = document.querySelector('#header2');
+        header.classList.toggle('rolagem',window.scrollY > 0);
+    });
 
-    var sidemenu = document.getElementById("sidemenu");
-    var headerText = document.getElementById("headerText")
+    const sidemenu = document.getElementById("sidemenu");
+    const headerText = document.getElementById("headerText");
 
     function openmenu(){
         sidemenu.style.right = "0";
@@ -201,9 +199,8 @@
     }
     function closemenu(){
         sidemenu.style.right = "-200px";
-        headerText.style.opacity = "100";
+        headerText.style.opacity = "1";
     }
-
 </script>
     
 </body>
